@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Spritzer</title>
+	<link rel="stylesheet" type="text/css" href="Spritzer.css">
+	<script src="Spritzer.js"></script>
+</head>
+<body>
+	<text>Esto es muy interesante (y como se ha señalado en otros comentarios, no es exactamente una idea nueva). Sin embargo, creo que su aplicación adecuada está en una herramienta para practicar la lectura, no para leer realmente las pruebas.
+		Una cosa importante que este enfoque pierde es la no linealidad inherente del texto. Si me olvido de un hecho y quiero retroceder un poco, o quiero hacer una pausa por un momento y pensar en algo, puedo (al leer) sin siquiera pensar en ello. Incluso si este enfoque es más rápido en general, hace que leer sea más como escuchar audio o mirar un video; Es un gran dolor rebobinar o hacer una pausa.
+		En segundo lugar, esto es en realidad más lento que la lectura a velocidad real o el skimming porque te obliga a leer cada palabra. Los lectores verdaderamente hábiles a menudo leerán material a un nivel muy superficial, solo se sumergirán y leerán consistentemente cuando se encuentren con un concepto novedoso. Esencialmente, pueden usar la compresión semántica para aumentar su velocidad de lectura con solo molestarse en leer lo que consideran relevante. Esto funciona en todos los niveles, desde la página hasta el capítulo, el párrafo y la oración. Por supuesto, no es perfecto, pero siempre es posible realizar una copia de seguridad si se descubre que se ha perdido información crucial.
+		Finalmente, aunque esta herramienta es realmente excelente para romper el hábito de subvocalización que dificulta la mayoría de los lectores lentos, una vez que aprendes a leer sin subvocalizarlo, se vuelve un poco redundante. Por ejemplo, mirando a Spritz, aumenté la velocidad a 500. Se sentía bastante bien, como si estuviera leyendo rápido. Luego fui y tomé una prueba de velocidad de lectura tradicional y registré a 700 palabras por minuto, con un 95% de comprensión. Así que no estoy seguro de que mi velocidad general sea mejor con Spritz.
+			Dicho esto, probablemente seguiré volviendo a esto o tecnologías como esta, ahora que estoy al tanto de ellas. Parecen ser una muy buena manera de forzarse en la mentalidad de lectura veloz. Tengo la sensación de que hacer esto durante 60 segundos antes de una sesión de lectura normal mejoraría sustancialmente la velocidad de lectura.</text>
+	<script>
+	var wordsPerMinute = 450;
+	var text = document.getElementsByTagName('text')[0].innerHTML;	
+	var h1 = document.body.appendChild(document.createElement('h1'));
+	var output = new Spritzer(h1);
+	output.render(text, wordsPerMinute);
+	</script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Introducing Lollipop, a sweet new take on Android.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+  <link href="img/favicon.ico" rel="icon" type="image/x-icon">
+  <title>LectorM Admin</title>
+
+  <!-- Page styles -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium,300,400,500,700&amp;lang=es">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="../css/material.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+    <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
+      <div class="mdl-layout__header-row">
+        <!-- Add spacer, to align navigation to the right in desktop -->
+        <span class="android-mobile-title1 mdl-layout-title">
+          <div class="logo-font">
+            <img src="../img/logomini.png">
+            LectorM
+          </div>
+        </span>
+      </div>
+    </div>
+
+    <div class="android-content mdl-layout__content">
+      <a name="top"></a>
+      <!-- ..::LOGIN::.. -->
+      <div class="mdl-grid ">
+        <div class="mdl-layout-spacer"></div>
+        <div id="login" class="mdl-shadow--8dp mdl-typography--text-center mdl-cell mdl-cell--6-col">
+          <div class="mdl-typography--display-1-color-contrast">
+            Acceso Docente
+          </div>
+          <!-- Simple Textfield -->
+          <form id="formAdminLogin" name="formAdminLogin" method="get" action="" class="mdl-shadow--8dp">
+
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <input class="mdl-textfield__input" type="text" id="user" name="user" required autofocus>
+              <label class="mdl-textfield__label" for="sample3">Usuario</label>
+              <!-- <span class="mdl-textfield__error">Usuario invalido</span> -->
+            </div>
+            <br>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <input class="mdl-textfield__input" type="password" id="pass" name="pass" required>
+              <label class="mdl-textfield__label" for="sample2">Contraseña</label>
+              <!-- <span class="mdl-textfield__error">Contraseña invalida</span> -->
+            </div>
+            <!-- FAB button with ripple -->
+            <div id="next">
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary">
+                Entrar
+                <i class="material-icons">arrow_forward</i>
+              </button>
+            </div>
+            <br>
+          </form>
+        </div>
+        <div class="mdl-layout-spacer">
+        </div>
+      </div>
+      <!-- ..::FIN LOGIN::.. -->
+
+      <footer class="android-footer mdl-mega-footer mdl-typography--text-center">
+        <div class="mdl-mega-footer--top-section">
+          <!-- REDES SOCAILES  -->
+          <div class="mdl-mega-footer--middle-section">
+            <!-- iet -->
+            <a href="http://www.ietfranciscomanzanerah.edu.co/" target="_blank">
+              <button class="mdl-button  mdl-button--fab">
+                <img src="../img/logomini.png" width="70%">
+              </button>
+            </a>
+            &nbsp;
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/IET-Francisco-Manzanera-Henr%C3%ADquez-Fanpage-366619123833810/"
+              target="_blank">
+              <button class="mdl-button  mdl-button--fab">
+                <img src="../img/icons8-facebook-old.svg">
+              </button>
+            </a>
+            &nbsp;
+            <!-- Youtube -->
+            <a href="https://www.youtube.com/channel/UCwS5QrR3h4CzHvSMzZ7qC5Q/videos?view=0&sort=dd&shelf_id=0"
+              target="_blank">
+              <button class="mdl-button  mdl-button--fab">
+                <img src="../img/icons8-youtube.svg">
+              </button>
+            </a>
+            &nbsp;
+          </div>
+          <!-- FIN REDES SOCAILES  -->
+        </div>
+
+        <div class="mdl-mega-footer--middle-section">
+          <p class="mdl-typography--font-light">
+            <br>
+            ©2019 Charles Torres Ing. Electrónico Mg. Ingeniería de Software<br>
+            Docente Tecnología e Informática IET Francisco Manzanera Henríquez
+          </p>
+        </div>
+
+        <div class="mdl-mega-footer--bottom-section">
+          <a class="android-link android-link-menu mdl-typography--font-light" id="version-dropdown">
+            <a class="android-link mdl-typography--font-light" href="">Politicas de privacidad</a>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="../js/jquery-3.4.1.min.js"></script>
+  <script src="../js/material.min.js"></script>
+  <script src="../js/jquery.validate.min.js"></script>
+  <script src="../js/validateES.js"></script>
+  <script src="js/login.js"></script>
+</body>
+
+</html>
